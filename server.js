@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 //connect mongo
 const db =  require('./config/keys.js').mongoURI;
 mongoose.connect(db)
-    .then(()=> console.log('mongo connected'))
+    .then(()=> console.log('Mongo connected'))
     .catch((e)=> console.log(e));
 
 // Use Routes

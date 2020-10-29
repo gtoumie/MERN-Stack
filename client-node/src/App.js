@@ -12,7 +12,6 @@ function App() {
   return (
     <Provider store={store} >
       <div className="App">
-        <h1>hello</h1>
         <AppNavbar ></AppNavbar>
         <Container>
           <ItemModal ></ItemModal>

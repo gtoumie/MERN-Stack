@@ -33,7 +33,7 @@ class AppNavbar extends Component {
                             </NavItem>
                             <NavItem>
                                 <NavLink href="#">Cat 2</NavLink>
-                            </NavItem>add
+                            </NavItem>
                             <NavItem>
                                 <NavLink href="#">Cat 3</NavLink>
                             </NavItem>
