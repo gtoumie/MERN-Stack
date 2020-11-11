@@ -10,7 +10,7 @@ const { findById } = require('../../models/Item');
 // @route   GET api/items
 // @desc    Get all items
 // @access  public
-router.get('/', auth, (req, res) => {
+router.get('/', (req, res) => {
     Item.find()
         .sort({ date: -1 })
         .then(items => res.json(items))
