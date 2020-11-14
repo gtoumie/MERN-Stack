@@ -10,7 +10,7 @@ const User = require('../../models/User');
 // @route   GET api/auth
 // @desc    Auth user
 // @access  public
-router.get('/', (req, res) => {
+router.post('/', (req, res) => {
     const { email, password } = req.body;
 
     if (!email || !password){
