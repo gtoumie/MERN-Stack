@@ -8,10 +8,10 @@ const auth = require('../../middleware/auth')
 
 const User = require('../../models/User');
 
-// @route   GET api/users
-// @desc    Get all users
+// @route   POST api/users
+// @desc    Register a new user
 // @access  public
-router.get('/', auth, (req, res) => {
+router.post('/', (req, res) => {
     const { name, email, password } = req.body;
 
     if (!name || !email || !password){
